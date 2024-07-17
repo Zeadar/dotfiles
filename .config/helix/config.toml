@@ -1,0 +1,26 @@
+theme = "everforest_dark_transparent"
+
+[editor]
+line-number = "relative"
+mouse = false
+text-width = 120
+popup-border = "all"
+
+[editor.lsp]
+display-inlay-hints = true
+display-messages = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.soft-wrap]
+enable = true
+
+[editor.statusline]
+right = ["file-encoding", "position", "position-percentage", "read-only-indicator"]
+center = ["spinner"]
