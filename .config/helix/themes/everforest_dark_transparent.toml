@@ -100,7 +100,7 @@
 "ui.virtual.ruler" = { bg = "bg3" }
 "ui.virtual.whitespace" = { fg = "bg4" }
 "ui.virtual.indent-guide" = { fg = "bg4" }
-"ui.virtual.inlay-hint" = { fg = "grey0" }
+"ui.virtual.inlay-hint" = { fg = "grey_hint", modifiers = ["italic"] }
 "ui.virtual.wrap" = { fg = "grey0" }
 
 "hint" = "green"
@@ -141,6 +141,7 @@ white = "#fcfcfc"
 grey0 = "#7a8478"
 grey1 = "#859289"
 grey2 = "#9da9a0"
+grey_hint = "#555c54"
 
 statusline1 = "#a7c080"
 statusline2 = "#d3c6aa"
