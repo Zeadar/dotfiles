@@ -1,0 +1,78 @@
+{
+    "output": "DP-1",
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["tray", "pulseaudio", "network", "cpu", "memory", "clock"],
+    "hyprland/workspaces": {
+        "all-outputs": false,
+        "disable-scroll": true,
+        "format-icons": {
+            "urgent": "",
+            "focused": "",
+            "default": ""
+        }
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "scroll-step": 5
+    },
+    "hyprland/window": {
+        "max-length": 160,
+        "tooltip": false
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "format": " {:%V %Y-%m-%d %R}",
+        "tooltip-format": "<span color='#35b9ab'><big>{:%Y %B}</big></span>\n<span color='#35b9ab'><tt><small>{calendar}</small></tt></span>",
+        "format-alt": "{:%a %d %b w:%V %H:%M}",
+        "today-format": "<span color='#21a4df'><b><u>{}</u></b></span>",
+        "calendar-weeks-pos": "left",
+        "format-calendar": "<span background='#173f4f' bgalpha='60%'><b>{}</b></span>",
+        "format-calendar-weeks": "<span color='#73ba25'><b>{}</b></span>",
+        "format-calendar-weekdays": "<span color='#21a4df'><b>{}</b></span>",
+        "interval": 10
+    },
+    "cpu": {
+	"interval": 2,
+        "format": "{usage}% ",
+        "tooltip": false
+    },
+    "memory": {
+	"interval": 2,
+        "format": "{}% "
+    },
+    "network": {
+        "interval": 2,
+        "min-length": 13,
+        "max-length": 13,
+        "align": 0,
+        "format-wifi": "  {bandwidthDownBytes}",
+        "format-ethernet": "  {bandwidthDownBytes}",
+        "format-linked": "",
+        "format-disconnected": "⚠",
+        "format-alt": "{ifname} {essid} ({signalStrength}%)"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+}
