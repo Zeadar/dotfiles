@@ -11,9 +11,9 @@ display-inlay-hints = true
 display-messages = true
 
 [editor.cursor-shape]
-insert = "bar"
+insert = "underline"
 normal = "block"
-select = "underline"
+select = "block"
 
 [editor.file-picker]
 hidden = false
