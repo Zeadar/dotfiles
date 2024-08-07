@@ -26,7 +26,7 @@ config.color_scheme = "Molokai"
 
 config.freetype_load_target = "Light"
 config.font = wezterm.font("Ubuntu Mono")
-config.font_size = 16.0
+config.font_size = 18.0
 
 config.background = {
   {
