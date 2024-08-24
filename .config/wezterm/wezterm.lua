@@ -12,7 +12,8 @@ config.default_prog = {"fish"}
 config.enable_wayland = false
 
 -- render
-config.front_end = "WebGpu"
+-- config.front_end = "WebGpu"
+config.front_end = "OpenGL"
 -- The WebGpu front end allows wezterm to use GPU acceleration provided by a number of platform-specific backends:
 -- Metal (on macOS)
 -- Vulkan
@@ -24,7 +25,7 @@ config.force_reverse_video_cursor = true
 
 config.color_scheme = "Molokai"
 
-config.freetype_load_target = "Light"
+config.freetype_load_target = "Normal"
 config.font = wezterm.font("Ubuntu Mono")
 config.font_size = 18.0
 
