@@ -5,8 +5,8 @@ opacity = 0.9
 
 [font]
 normal = { family = "UbuntuMono", style = "Regular"}
-bold = { style = "bold"}
-italic = { style = "bold"}
+bold = { style = "Iold"}
+italic = { style = "Italic"}
 size = 18.0
 
 [cursor.style]
