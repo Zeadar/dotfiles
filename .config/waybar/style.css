@@ -16,7 +16,7 @@ window#waybar {
   color: greenyellow;
   /*background-color: rgba(23, 63, 79, 0.8);*/
   /*background: linear-gradient(rgba(0, 20, 10, 0.4), rgba(0, 20, 10, 0.8));*/
-  background: linear-gradient(rgba(0, 10, 5, 0.6) 25%, rgba(0, 10, 5, 0.9));
+  background: linear-gradient(rgba(0, 10, 5, 0.7) 25%, rgba(0, 10, 5, 0.9));
   /*border-bottom: 2px solid rgba(53, 185, 171, 0.4);*/
   /*border-bottom: 2px solid rgba(53, 128, 128, 0.2);*/
 }
